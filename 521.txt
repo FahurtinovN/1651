@@ -1,0 +1,142 @@
+from math import sqrt
+def distance(x1, y1, x2, y2):
+    return sqrt((x1 - x2) **2 + (y1 - y2) **2)
+x1 = float(input()) 
+x2 = float(input()) 
+y1 = float(input()) 
+y2 = float(input()) 
+print(distance(x1, y1, x2, y2))
+
+
+
+def power(a, n):
+    res = 1
+    for i in range(n):
+        res *= a
+    if n >= 0:
+        return res
+    else:
+        return 1 / res
+print(power(float(input()), int(input())))
+
+
+
+
+
+
+n = int(input())
+if n == 0:
+    print(0)
+else:
+    a, b = 0, 1
+    for i in range(2, n + 1):
+        a, b = b, a + b
+    print(b)
+
+
+
+year = int(input())
+if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
+    print('True')
+else:
+    print('False')
+
+
+
+def square(a):
+	p = 4*a
+	s = a*a
+	d = (a**2) / 2
+	d = d**0.5	
+	k = (p, s, d)	
+	return k	
+print(square(16))
+
+
+
+
+
+
+def season(moth):
+
+    if month == 12 or month < 3:
+        return "«има"
+    elif month == 3 or month < 6:
+        return "¬есна"
+    elif month == 6 or month < 9:
+        return "Ћето"
+    else:
+        return "ќсень"
+
+
+
+month = input("¬ведите мес€ц(число):")
+
+while True:
+    if not month.isdigit():
+        print("ќшибка ввода!")
+        print("»спользуйте только целые числа.")
+        month = input("¬ведите мес€ц(число):")
+        continue
+    else:
+        break
+
+month = int(month)
+while True:
+    if month == 0:
+        print("“акого мес€ца несуществует")
+        print("»спользуйте только целые числа.")
+        month = input("¬ведите мес€ц(число):")
+        continue
+    else:
+        break
+
+month = int(month)
+
+answer = season(month)
+print(answer)
+
+
+
+
+
+def bank():
+    stavka = 10
+    n = int(input())
+    years = int(input())
+
+    for i in range(years):
+        n = int(n+stavka*n/100)
+        print()
+bank()
+
+
+def is_prime(x):
+    f= True
+    for i in range(2,int(x**0.5)):
+        if x%i ==0:
+            f = false
+    return(f)
+a = int(input())
+print(is_prime(a))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
